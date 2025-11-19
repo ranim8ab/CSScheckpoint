@@ -1,0 +1,164 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY STYLE */
+body {
+    font-family: "Roboto", sans-serif;
+    background: #CCBBED;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBARS */
+nav {
+    background: #111;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d4ff;
+}
+
+/* SECTIONS */
+.section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* HOME SECTION */
+.title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #0077ff;
+    font-weight: bold;
+}
+
+/* PROFILE SECTION */
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-img {
+    width: 220px;
+    height: auto;   
+    border-radius: 8px;
+    border: 4px solid #0077ff;
+}
+
+.profile-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .profile-text {
+        text-align: center;
+    }
+}
+
+/* TABLES */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #0077ff;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* FoORM */
+form {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background: #0077ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* DESIGN */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}

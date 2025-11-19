@@ -1,88 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <tytle>My Portfolio</tytle>
-    
-<!--Head AND NAVBAR-->
-    </head>
-<body>
-<nav>
-    <ul>
-        <li><a>href="#Home"Home</a></li>
-        <li><a>href="#About"About</a></li>
-        <li><a>href="#Work"Work</a></li>
-        <li><a>href="#Resume"Resume</a></li>
-        <li><a>href="#Contact"Contact</a></li>
-    </ul>
-</nav>   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--HOME SECTION-->
-<section id="Home">
-    <h2>Welcome to My Portfolio</h2>
-    <p> This is my very first time building a website and even a CV.
-        I'm just getting started in web development,and while I don't 
-        really have any big accomplishments yet,I'm excited to learn
-        and exploring this amazing field step by step.
-        Scroll down to learn more about me</p>
+    <title>My Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="section">
+    <div class="profile-container">
+        <img src="profile.jpeg" alt="My Profile Picture" class="profile-img">
+
+        <div class="profile-text">
+            <h1 class="title">My Portfolio</h1>
+            <p class="description">
+                <span class="highlight">This is my very first time building a website and a CV.</span>
+                I’m just getting started in web development, and even though I don’t have big accomplishments yet, I’m excited to learn step by step.
+            </p>
+        </div>
+    </div>
 </section>
 
-<!--ABOUT SECTION-->
-<section id="About">
-    <h2>About me:</h2>
-    <table> 
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <table>
         <tr>
             <th>Category</th>
             <th>Details</th>
         </tr>
-
         <tr>
             <td>Name</td>
             <td>Ranim Abdellaoui</td>
         </tr>
-
         <tr>
-            <td>Date of birth</td>
+            <td>Date of Birth</td>
             <td>18/02/2005</td>
         </tr>
-        
         <tr>
-            <td>Why I chose Web Development</td>
-            <td>
-                I chose Web Development because I love the idea of building from scratch and creating designs
-            </td>
+            <td>Why Web Development?</td>
+            <td>I love the idea of building something from scratch and expressing creativity through design.</td>
         </tr>
-
         <tr>
             <td>Skills</td>
-            <td>
-                Improving my skills in HTML, CSS, and JavaScript
-            </td>
+            <td>HTML, CSS, JavaScript (improving)</td>
         </tr>
-
         <tr>
             <td>Hobbies & Interests</td>
-            <td>
-                I'm into photography and editing in a cinematic way
-            </td>
+            <td>Photography, cinematic editing</td>
         </tr>
     </table>
 </section>
 
-<!--WORK SECTION-->
-<section id="Work">
-    <h3>Projects</h3>
+<!-- WORK -->
+<section id="work" class="section">
+    <h2>Projects</h2>
     <ul>
-        <li>Portfolio Page - (this project)</li>
+        <li>Portfolio Page (this project)</li>
     </ul>
 </section>
 
-<!--RESUME SECTION-->
-<section id="Resume">
+<!-- RESUME -->
+<section id="resume" class="section">
+    <h2>Resume</h2>
+
     <h3>Education</h3>
     <ul>
         <li>High School Diploma</li>
         <li>Web Development Training - GoMyCode</li>
     </ul>
+
     <h3>Languages</h3>
     <ul>
         <li>Arabic</li>
@@ -90,39 +98,42 @@
         <li>English</li>
         <li>German</li>
     </ul>
-    <h3>Tools I'm currently using</h3>
+
+    <h3>Tools I Use</h3>
     <ul>
         <li>VS Code</li>
         <li>Git & GitHub</li>
     </ul>
 </section>
 
-<!--CONTACT SECTION-->
-<section id="Contact">
+<!-- CONTACT -->
+<section id="contact" class="section">
     <h2>Contact Me</h2>
-    <p>Feel free to reach out using the form below</p>
+    <p>Feel free to reach out using the form below:</p>
+
     <form>
-       <label>Name:</label>
-       <input type="text" id="Enter your name">
-       
-       <label>Email:</label>
-       <input type="email" id="Enter your email">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
 
-       <label>Message:</label>
-       <textarea rows="8" id="Type your message"></textarea>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
 
-       <button type="submit informations">Send</button>
+        <label for="message">Message:</label>
+        <textarea id="message" rows="6" placeholder="Write your message here"></textarea>
+
+        <button type="submit">Send</button>
     </form>
 </section>
 
-<!--FOOTER-->
+<!-- FOOTER -->
 <footer>
-    <p>2025 My Portfolio. All rights reserved.</p>
+    <p>© 2025 My Portfolio. All rights reserved.</p>
 </footer>
 
-<!--PERSONAL VOICE AUDIO-->
+<!-- AUDIO -->
 <audio controls>
-    <source src="audio.ogg.opus" type="audio/ogg"
+    <source src="audio.ogg.opus" type="audio/ogg">
 </audio>
+
 </body>
 </html>
